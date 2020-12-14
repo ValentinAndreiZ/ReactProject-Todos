@@ -1,0 +1,20 @@
+.todos-container {
+    margin-top: 2rem;
+    padding: 3rem;
+    background-color: #eee;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .todos-container {
+    padding: 1rem;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .todos-container {
+        padding: 0rem;
+    
+        }
+}

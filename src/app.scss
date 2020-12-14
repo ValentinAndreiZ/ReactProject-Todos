@@ -1,0 +1,17 @@
+
+// OWN COMPONENTS STYLES
+
+@import './styles/components/AddTodosForm.scss';
+@import './styles/components/TodosList.scss';
+@import './styles/components/Todo.scss';
+@import './styles/components/SortingBar.scss';
+
+@import './styles/base/reset.scss';
+
+
+
+//LIB COMPONENTS STYLES
+
+@import '../node_modules/rodal/lib/rodal.css';
+@import '../node_modules/react-day-picker/lib/style.css';
+
