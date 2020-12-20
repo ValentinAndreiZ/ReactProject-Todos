@@ -39,7 +39,7 @@ class AddTodosForm extends React.Component {
         return (
             <div className="addTodosForm" >
 
-                <input onChange={this.onInputChange} value={this.state.description} type="text" placeholder="Write todo here for idiots..." />
+                <input onChange={this.onInputChange} value={this.state.description} type="text" placeholder="Type todo here..." />
                 <div className="addTodosForm-Links">
 
                     <a onClick={this.onFormSubmit}>
