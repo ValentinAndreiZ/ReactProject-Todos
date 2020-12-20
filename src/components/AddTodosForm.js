@@ -5,11 +5,11 @@ import moment from 'moment';
 class AddTodosForm extends React.Component {
 
 
-    state = { description: ''}
+    state = { description: '' }
 
     componentDidMount() {
         window.addEventListener('keypress', (e) => {
-            if(e.key === "Enter") {
+            if (e.key === "Enter") {
                 this.onFormSubmit()
             }
         })
@@ -26,10 +26,10 @@ class AddTodosForm extends React.Component {
                 completed: false,
                 description: this.state.description,
                 createdAt: moment().unix(),
-                updatedAt : null,
+                updatedAt: null,
                 extendedDescription: '',
-                deadline : undefined, 
-                isPriority : false
+                deadline: undefined,
+                isPriority: false
             }
         )
         this.setState({ description: '' })
@@ -37,15 +37,22 @@ class AddTodosForm extends React.Component {
 
     render() {
         return (
-            <div className="ui right labeled left icon input">
+            <div className="addTodosForm" >
 
                 <input onChange={this.onInputChange} value={this.state.description} type="text" placeholder="Enter Todo" />
-                <a onClick={this.onFormSubmit} className="ui tag label">
-                    Add Todo
+                <div className="addTodosForm-Links">
+
+                    <a onClick={this.onFormSubmit}>
+                    <i className="pencil alternate icon"></i>
+
+                        Add Todo
                  </a>
-                 <a onClick={this.props.removeAllProp} className="ui tag label">
-                    Remove All
+                    <a onClick={this.props.removeAllProp} >
+                        <i className="eraser icon"></i>
+                        Remove All
                  </a>
+                </div>
+
             </div>
         )
     }
