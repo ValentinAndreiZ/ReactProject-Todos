@@ -8,10 +8,9 @@
 
 @import './styles/base/reset.scss';
 
-
+@import './styles/components/Rodal.scss';
 
 //LIB COMPONENTS STYLES
 
-@import 'rodal/lib/rodal.css';
+// @import 'rodal/lib/rodal.css';
 @import 'react-day-picker/lib/style.css';
-

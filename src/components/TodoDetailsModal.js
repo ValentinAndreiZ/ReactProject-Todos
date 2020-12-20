@@ -3,6 +3,9 @@ import Rodal from 'rodal';
 import moment from 'moment';
 import DayPicker from 'react-day-picker';
 
+// import 'react-day-picker/lib/style.css';
+
+
 // import { render } from 'sass';
 
 // CSS TO BE EDITED FOR THIS COMPONENT IN rodal.css file. PATH: node_modules -> rodal -> docs -> lib -> rodal.css
