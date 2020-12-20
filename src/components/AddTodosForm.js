@@ -44,13 +44,12 @@ class AddTodosForm extends React.Component {
 
                     <a onClick={this.onFormSubmit}>
                     <i className="pencil alternate icon"></i>
-
-                        Add Todo
-                 </a>
+                        Write Todo...
+                     </a>
                     <a onClick={this.props.removeAllProp} >
                         <i className="eraser icon"></i>
                         Remove All
-                 </a>
+                    </a>
                 </div>
 
             </div>
