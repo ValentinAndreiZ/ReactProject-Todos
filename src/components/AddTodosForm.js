@@ -39,12 +39,12 @@ class AddTodosForm extends React.Component {
         return (
             <div className="addTodosForm" >
 
-                <input onChange={this.onInputChange} value={this.state.description} type="text" placeholder="Enter Todo" />
+                <input onChange={this.onInputChange} value={this.state.description} type="text" placeholder="Write todo here for idiots..." />
                 <div className="addTodosForm-Links">
 
                     <a onClick={this.onFormSubmit}>
                     <i className="pencil alternate icon"></i>
-                        Write Todo...
+                        Add Todo
                      </a>
                     <a onClick={this.props.removeAllProp} >
                         <i className="eraser icon"></i>
