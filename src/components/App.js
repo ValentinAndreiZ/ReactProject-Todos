@@ -5,13 +5,17 @@ import AddTodosForm from './AddTodosForm';
 import TodosList from './TodosList';
 import DetailsModal from './TodoDetailsModal';
 import SortingBar from './SortingBar';
-
+import tutorial from './Tutorial';
 
 
 class App extends React.Component {
 
     state = {
-        todos: [],
+        todos: [
+            tutorial[0], 
+            tutorial[1], 
+            tutorial[2]
+        ],
         detailsVisible: false,
         currentTodoInModal: '',
 
