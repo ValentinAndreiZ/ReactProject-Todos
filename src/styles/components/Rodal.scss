@@ -54,6 +54,11 @@
   font-style: oblique;
   font-size: 3rem;
   text-transform: uppercase;
+
+  @media only screen and (max-width: 768px) {
+   font-size: 1.5rem;
+   }
+  
 }
 
 .rodal-dialog h2 {
